@@ -76,7 +76,9 @@ $(document).on("pagecreate",function(event){
 <h1 id="demo"></h1>
 
 <script>
-document.getElementById("demo").innerHTML = random1;
+<!--document.getElementById("demo").innerHTML = random1; -->
+let screenBrightness = window.screen.mozBrightness;
+document.getElementById("demo").innerHTML = screenBrightness;
 </script>
 
   <div data-role="footer">

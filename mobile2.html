@@ -40,7 +40,8 @@
 		function onMessageArrived(message) {
 			console.log("onMessageArrived:"+message.payloadString);
 			//if(message.payloadString == "100") 
-			   navigator.vibrate([2000, 500, 2000]);
+			document.getElementById("demo").innerHTML = message.payloadString;
+			navigator.vibrate([2000, 500, 2000]);
 		}
 			
         
